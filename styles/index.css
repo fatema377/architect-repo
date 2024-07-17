@@ -56,6 +56,7 @@ main{
     font-weight: 700px;
     font-size: 2.5rem;
 }
+
 .nav-links{
     display: flex;
     gap: 15px;
@@ -98,8 +99,10 @@ text-align: center;
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 2px;
+   
     
 }
+.bnr-tit:hover{color: rgb(220, 20, 113);}
 .banner-des{
     font-size: 1rem;
     color: #727272;
@@ -136,11 +139,62 @@ text-align: center;
     font-size:2.8rem;
     font-weight: 500px;
 }
+
 .feature-des{
     color: #727272;
 }
 /* love and enjoy styleS */
+.love-section{
+    margin-top: 100px;
+}
+.l-b-tit{
+    font-size: 1.3rem;
+    font-weight: 700;
 
+}
+.love-box{
+    box-shadow:10px 10px 10px #e1dcdc96;
+    /* height: 171px; */
+    padding: 30px 38px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding-right: 150px;
+    
+}
+.love-color{
+    height: 107px;
+    width: 5px;
+    color: #FF900E;
+}
+.love-text-had{
+    display: flex;
+    gap: 15px;
+}
+.love-enjoy-container{
+    display: flex;
+    gap: 25px;
+}
+.love-tit{
+    border-left:5px  solid #FF900E;
+    padding-left: 25px;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#experience-badge{
+    padding: 45px 42px;
+    color: white;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+.btn-t-1{
+    font-size: 4rem;
+    font-weight: 600;
+}
+.bnr-t-2{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
 
 
 
@@ -154,6 +208,10 @@ text-align: center;
     padding-top: 30px;
     text-align: center; 
     box-shadow: 10px 10px 10px  #b8b6b6;
+    border-radius: 9px;
+}
+.fact:hover{
+    background-color: rgba(245, 208, 245, 0.824);
 }
 .fact-container{
     display: grid;
@@ -170,12 +228,34 @@ text-align: center;
 .fact-text{
     font-size: 1.2rem;font-weight: 500;
 }
-
+/* our sponsors */
+.sponsor-info{
+    text-align: center;
+    width: 540px;
+    margin: 50px auto;
+}
+.sponsor-imgs{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 30px;
+    filter: grayscale(100%);
+}
+.our-sponsors{
+    margin: 150px auto;
+}
+/* footer style  */
+.fot{
+    text-align: center;
+    padding: 15px;
+    background-color: antiquewhite;
+    margin-bottom: 40px;
+}
 
 
 /* responsive media query */
 @media screen and (max-width:576px){
-   .navbar, .nav-links, .teams{
+   .navbar, .nav-links, .teams, 
+   .love-enjoy-container{
      flex-direction: column; } 
      /* .header{
         width: 100%;
@@ -186,10 +266,37 @@ text-align: center;
     .fact-container{
         display: grid;
         grid-template-columns: repeat(1 ,1fr);}
-     
+      
+        .fact-des, .fact-tit{
+            text-align: center;
+        }
+        .sponsor-imgs{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 15px;
+            width: 180px;
+        }
+        .sponsor-info{
+            width: 360px;
+        }
+        .spn-img{
+            margin-bottom: 30px;
+            margin-left: 90px;
+            
+        }
+        #experience-badge{
+            margin-top: 10px;
+            margin-left: 0px;
+        }
+        .love-img img{
+            width: 100%;
+        }
+        
+
+
 }
 @media screen and (min-width:576px) and (max-width:992px) {
-    .navbar, .nav-links, .teams{
+    .navbar, .nav-links, .teams, .love-enjoy-container{
         flex-direction: column; } 
         /* .header{
            width: 100%;
@@ -200,4 +307,25 @@ text-align: center;
        .fact-container{
         display: grid;
         grid-template-columns: repeat(2 ,1fr);}
+        .fact-des, .fact-tit{
+            text-align: center;
+        }
+        .sponsor-imgs{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            margin: 10px;
+            margin-bottom: 40px;
+            gap: 30px;
+            
+        }
+        .spn-img{
+            margin-bottom: 30px;
+            box-shadow:5px 5px 5px #8e8d8d;
+            
+        }
+        #experience-badge{
+            margin-top: 10px;
+            margin-left: 0px;
+        }
+
    }
